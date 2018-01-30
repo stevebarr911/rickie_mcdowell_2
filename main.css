@@ -1,5 +1,9 @@
 
+/*Header Styles */
 
+#name{
+    text-align: center;
+}
 /* Style the tab */
 .tab {
     overflow: hidden;
@@ -36,3 +40,49 @@
     border-top: none;
 }
 
+
+/* Home Styles */
+
+.grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    ". img img ."
+    "info info info info";
+
+}
+
+.img {
+    grid-area: img;
+}
+
+.info {
+    grid-area: info;
+}
+
+/* Footer Styles */
+
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+}
+
+footer nav li {
+    list-style-type: none;
+}
+
+#copyright {
+    float: left;
+}
+
+#social {
+    margin: 0;
+}
+
+#social li {
+    float: right; 
+    display: inline;
+    padding-left: 1em;
+}
