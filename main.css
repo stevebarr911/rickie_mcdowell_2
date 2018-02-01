@@ -106,42 +106,24 @@
 
 /* Contact Tab Grid */
 
-.contact-grid {
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-grid-gap: 5px;
-grid-template-areas: 
-"ct ct . ."
-". cc cc ."
-"ci ci ci ci"; /*Why is the image centering??*/
+#contact-info {
+    width: 50%;
+    float: left;
 }
 
-.ct {
-    grid-area: ct;
-}
-
-.cc {
-    grid-area: cc;
-}
-
-.ci {
-    ci;
-}
-
-#contact-title {
-    font-size: 2em;
-}
-
-#contact-content ul {
+#contact-info ul {
     list-style-type: none;
 }
 
-#contact-content img {
-    max-width: 100%;
-    max-height: auto;
-    margin-right: 1em;
-    margin-top: 1em;
+#contact-image {
+    width: 50%;
+    float: right;
 }
+
+#contact-image img {
+    width: 100%;
+}
+
 
 /* Resume Tab Styles */
 
@@ -204,4 +186,24 @@ footer nav li {
         float: none;
         width: 100%;
     }
+
+    #Contact {
+        display: flex;
+        justify-content: center;
+    }
+
+    #contact-info {
+        float: none;
+        margin-bottom: 10px;
+        text-align: center;
+        width: 100%
+    }
+
+    #contact-info ul {
+        padding: 0;
+    }
+
+    #contact-image {
+        float: none;
+        width: 100%;
 }
