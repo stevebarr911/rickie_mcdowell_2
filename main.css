@@ -143,8 +143,20 @@ grid-template-areas:
     margin-top: 1em;
 }
 
+/* Resume Tab Styles */
 
+#resume-col-1 {
 
+    width: 50%;
+    float: left;
+    margin-bottom: 100px;
+}
+
+#resume-col-2 {
+    
+    width: 50%;
+    float: right;
+}
 
 /* Footer Styles */
 
@@ -173,4 +185,23 @@ footer nav li {
    
     display: inline;
     padding-left: 1em;
+}
+
+
+/* Media Queries */
+
+@media(max-width: 768px) {
+    #Resume {
+    }
+    
+    #resume-col-1 {
+        float: none;
+        margin-bottom: 0;
+        width: 100%;
+    }
+
+    #resume-col-2 {
+        float: none;
+        width: 100%;
+    }
 }
