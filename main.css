@@ -63,10 +63,15 @@
 
 .image {
     grid-area: image;
+    margin-right: 1em;
 }
 
 .stats {
     grid-area: stats;
+}
+
+.stats ul {
+    list-style-type: none;
 }
 
 .info {
@@ -109,6 +114,10 @@
 #contact-info {
     width: 50%;
     float: left;
+}
+
+#contact-info p h3 {
+    margin-right: 0;
 }
 
 #contact-info ul {
@@ -189,7 +198,7 @@ footer nav li {
         width: 100%;
     }
 
-    #Contact {
+    #Contact-container {
         display: flex;
         justify-content: center;
     }
@@ -208,4 +217,10 @@ footer nav li {
     #contact-image {
         float: none;
         width: 100%;
+    }
+
+    #contact-image img {
+        width: 100%;
+    }
 }
+
